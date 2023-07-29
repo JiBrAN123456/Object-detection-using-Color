@@ -14,12 +14,12 @@ upper_red1 = np.array([10, 255, 255])
 lower_red2 = np.array([170, 120, 70])
 upper_red2 = np.array([180, 255, 255])
 
-# Define the lower and upper bounds for red color
+# Define the lower and upper bounds for orange color
 lower_orange = np.array([0, 100, 100])
 upper_orange = np.array([30, 255, 255])
 
 
-# Create masks for red color (two ranges)
+# Create masks for red and orange color 
 mask1 = cv2.inRange(hsv_image, lower_red1, upper_red1)
 mask2 = cv2.inRange(hsv_image, lower_red2, upper_red2)
 mask3 = cv2.inRange(hsv_image,lower_orange,upper_orange)
