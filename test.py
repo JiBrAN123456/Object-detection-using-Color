@@ -50,7 +50,7 @@ for contour in contours:
     text = "Object"
     cv2.putText(image, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
 
-import cv2
+
 
 def save_image(image_path, output_path):
     # Read the image
@@ -59,7 +59,7 @@ def save_image(image_path, output_path):
     # Save the image to the specified output path
     cv2.imwrite(output_path, image)
 
-# Example usage:
+#  usage:
 input_image_path = "\\Users\yunis\PycharmProjects\pythonProject1\images\image_1.jpg"
 output_image_path = "\\Users\yunis\PycharmProjects\pythonProject1\images\image_1o.jpg"
 save_image(input_image_path, output_image_path)
